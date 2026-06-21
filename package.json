@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "server": "cd backed && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && npm run build",
+    "start": "cd backed && npm start"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}

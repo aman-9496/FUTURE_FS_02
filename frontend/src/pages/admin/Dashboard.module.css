@@ -1,0 +1,120 @@
+.layout {
+  display:    flex;
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+.main {
+  flex:       1;
+  transition: margin-left 0.25s ease;
+  min-height: 100vh;
+}
+
+.topbar {
+  background:      white;
+  border-bottom:   1px solid #e2e8f0;
+  padding:         1rem 1.5rem;
+  display:         flex;
+  justify-content: space-between;
+  align-items:     center;
+  position:        sticky;
+  top:             0;
+  z-index:         10;
+  box-shadow:      0 1px 4px rgba(0,0,0,0.04);
+}
+
+.pageTitle {
+  font-size:   18px;
+  font-weight: 700;
+  color:       #0f172a;
+  margin:      0;
+}
+
+.pageSub {
+  font-size:  12px;
+  color:      #94a3b8;
+  margin-top: 2px;
+}
+
+.content {
+  padding:   1.5rem;
+  max-width: 960px;
+}
+
+.searchInput {
+  width:         100%;
+  padding:       13px 16px;
+  border-radius: 12px;
+  border:        1.5px solid #e2e8f0;
+  font-size:     14px;
+  background:    white;
+  margin-bottom: 14px;
+  box-sizing:    border-box;
+  box-shadow:    0 1px 3px rgba(0,0,0,0.04);
+  transition:    border-color 0.2s, box-shadow 0.2s;
+}
+
+.searchInput:focus {
+  outline:      none;
+  border-color: #2563eb;
+  box-shadow:   0 0 0 3px rgba(37,99,235,0.1);
+}
+
+.tabsRow {
+  display:       flex;
+  gap:           8px;
+  flex-wrap:     wrap;
+  margin-bottom: 16px;
+}
+
+.tab {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 18px; border-radius: 99px;
+  border: 1.5px solid #e2e8f0; background: white;
+  color: #64748b; font-size: 13px; cursor: pointer;
+  font-weight: 500; transition: all 0.2s;
+}
+
+.tab:hover { border-color: #2563eb; color: #2563eb; }
+
+.tabActive {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 18px; border-radius: 99px;
+  border: 1.5px solid #2563eb; background: #2563eb;
+  color: white; font-size: 13px; cursor: pointer; font-weight: 600;
+}
+
+.count {
+  background: #f1f5f9; color: #64748b;
+  font-size: 11px; padding: 2px 8px;
+  border-radius: 99px; font-weight: 600;
+}
+
+.countActive {
+  background: rgba(255,255,255,0.25); color: white;
+  font-size: 11px; padding: 2px 8px;
+  border-radius: 99px; font-weight: 600;
+}
+
+.listSection {
+  background: white; border-radius: 16px; padding: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06); border: 1px solid #f1f5f9;
+}
+
+.listHeader {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px; padding-bottom: 14px;
+  border-bottom: 1.5px solid #f1f5f9;
+}
+
+.listTitle { font-size: 16px; font-weight: 700; color: #0f172a; }
+.listCount { font-size: 13px; color: #94a3b8; font-weight: 500; }
+
+.emptyText {
+  color: #94a3b8; font-size: 14px; text-align: center; padding: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .main   { margin-left: 0 !important; }
+  .content { padding: 1rem; }
+}
