@@ -19,8 +19,9 @@ export default function About() {
           <span style={s.badge}>About Us</span>
           <h1 style={s.title}>Built for Simplicity,<br />Designed for Results</h1>
           <p style={s.sub}>
-            MiniCRM was born from frustration with complex, over-engineered CRM tools.
-            We built something lean, fast, and beautiful — just what small teams actually need.
+            A modern, lightweight CRM solution built with React and Node.js.
+            Streamline your lead management and client relationships with our clean,
+            responsive interface designed for today's fast-moving businesses.
           </p>
         </div>
       </section>
@@ -32,9 +33,10 @@ export default function About() {
             <div>
               <h2 style={s.h2}>Our Mission</h2>
               <p style={s.body}>
-                Empower every freelancer and small business to manage client relationships
-                without drowning in features they'll never use. We believe great tools
-                should be invisible — they just work.
+                MiniCRM simplifies customer relationship management for small businesses and freelancers.
+                Built with modern web technologies, it offers an intuitive interface to track leads,
+                manage contacts, and grow your business — without the complexity of enterprise solutions.
+                Fast, secure, and designed to scale with your needs.
               </p>
             </div>
             <div style={s.statsRow}>
