@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist -r https://github.com/aman-9496/FUTURE_FS_02.git -b frontend-pages"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.15.0",
