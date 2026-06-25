@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/FUTURE_FS_02/',
   server: {
     proxy: {
       '/api': {
